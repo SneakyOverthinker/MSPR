@@ -1,19 +1,19 @@
 <?php
 //réccu données via $_POST
 include_once 'includes/helpers.php';
-function getAdmin() {
+function getUser() {
     $dbh = connectDB();
-    $stmt = $dbh->query( "SELECT * FROM admin");
+    $stmt = $dbh->query( "SELECT * FROM user");
     return $stmt->fetch(PDO::FETCH_ASSOC);
 }
 
 
-$admin = getAdmin();
+$user = getUser();
 
-if ($admin['email']== $_POST['email'] AND  $admin['password']== $_POST['password'])
+if ($user['email']== $_POST['email'] AND  $user['password']== $_POST['password'])
 {
     session_start();
-    $_SESSION['admin']=$admin;
+    $_SESSION['admin']=$user;
     header("Location:index.php");
     //index.client
 }
