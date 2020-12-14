@@ -1,4 +1,4 @@
-<?php include_once 'includes/header.php'; ?>
+<?php include_once '../../includes/header.php'; ?>
 
 <?php $user = getUser($_GET['id']); ?>
 
@@ -34,4 +34,4 @@
         </form>
 
     </div>
-<?php include_once 'includes/footer.php' ?>
+<?php include_once '../../includes/footer.php' ?>

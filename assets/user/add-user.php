@@ -1,5 +1,5 @@
 //ce n'est qu'une page de traitement
-<?php include_once '../includes/helpers.php';
+<?php include_once '../../includes/helpers.php';
 
 
 $data = [
@@ -25,4 +25,4 @@ $stmt->execute();
 $id = $dbh->lastInsertId();
 header('Location: ../index.php');
 
-header("Location: ../user.php?id=$id");
+header("Location: ../user/user.php?id=$id");
