@@ -14,3 +14,5 @@
 
         <button type="submit" name="save" class="btn btn-primary">Ajouter</button>
     </form>
+
+<?php include_once 'includes/footer.php' ?>
