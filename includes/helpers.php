@@ -7,6 +7,7 @@ function connectDB()
         [PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8']
     );
 }
+<<<<<<< Updated upstream
 // We get the users from the DBH
 function getUsers()
 {
@@ -21,3 +22,5 @@ function getUser($id)
     $stmt = $dbh->query("SELECT * FROM users WHERE id = $id");
     return $stmt->fetch(PDO::FETCH_ASSOC);
 }
+=======
+>>>>>>> Stashed changes
