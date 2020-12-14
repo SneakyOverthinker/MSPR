@@ -8,16 +8,14 @@ function connectDB()
     );
 }
 // We get the users from the DBH
-function getUsers()
-{
-    $dbh = connectDB();
-    $stmt = $dbh->query("SELECT * FROM users");
-    return $stmt->fetchAll(PDO::FETCH_ASSOC); // many to show
-}
-
-function getUser($id)
-{
+function getUser($id){
     $dbh = connectDB();
     $stmt = $dbh->query("SELECT * FROM users WHERE id = $id");
     return $stmt->fetch(PDO::FETCH_ASSOC);
 }
+
+function getUsers(){
+    $dbh = connectDB();
+    // On prépare la requête SQL
+    $stmt = $dbh->query("SELECT*FROM users");
+    return $stmt->fetchAll(PDO::FETCH_ASSOC);}

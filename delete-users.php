@@ -8,4 +8,4 @@ $stmt->bindValue(':id', $id);
 $stmt->execute();
 
 
-header('Location: ../all-users.php');
+header('Location: assets/user/users.php');
