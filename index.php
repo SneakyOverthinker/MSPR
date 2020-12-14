@@ -49,7 +49,7 @@
                          aria-labelledby="v-pills-login-tab">
 
                         <form class="form-signin" action="assets/session.php">
-                            <h1 class="h3 mb-3 font-weight-normal">S'inscrire</h1>
+                            <h1 class="h3 mb-3 font-weight-normal">Se connecter</h1>
                             <label class="sr-only">Connexion</label>
                             <input type="text" id="inputEmail" class="form-control" placeholder="login" name="login"
                                    required
@@ -57,7 +57,7 @@
                             <label class="sr-only">Mot de passe</label>
                             <input type="password" id="inputPassword" class="form-control" placeholder="Password" name="password"
                                    required>
-                            <button class="btn btn-lg btn-primary btn-block" type="submit">S'inscrire</button>
+                            <button class="btn btn-lg btn-primary btn-block" type="submit">Connexion</button>
                         </form>
 
                     </div>
