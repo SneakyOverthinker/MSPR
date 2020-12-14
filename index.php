@@ -66,30 +66,33 @@
                         <form class="form-signup" action="assets/user/add-user.php" >
                             <h1 class="h3 mb-3 font-weight-normal">Créer un profil</h1>
                             <div class="mb-3">
-                                <label for="exampleInputEmail1" class="form-label">Nom</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                <label for="nom" class="form-label">Nom</label>
+                                <input type="text" class="form-control" id="nom" >
                             </div>
                             <div class="mb-3">
-                                <label for="exampleInputEmail1" class="form-label">Prénom</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                <label for="prenom" class="form-label">Prénom</label>
+                                <input type="text" class="form-control" id="prenom">
                             </div>
                             <div class="mb-3">
-                                <label for="exampleInputEmail1" class="form-label">Date de naissance</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                <label for="date" class="form-label">Date de naissance</label>
+                                <input type="date" class="form-control" id="date_de_naissance">
                             </div>
                             <div class="mb-3">
                                 <label for="exampleInputEmail1" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                <input type="email" class="form-control" id="email">
                             </div>
-                            <label for="inputEmail" class="sr-only">Connexion</label>
-                            <input type="text" id="inputEmail" class="form-control" placeholder="login" name="newlogin"
-                                   required
-                                   autofocus>
-                            <label for="inputPassword" class="sr-only">Mot de passe</label>
-                            <input type="password" id="inputPassword" class="form-control" placeholder="Password" name="newpassword"
-                                   required>
-                            <input type="password" id="inputPassword" class="form-control" placeholder="Repeat Password" name="password1"
-                                   required>
+                             <div>
+                                 <label for="inputPassword" class="sr-only">Mot de passe</label>
+                                 <input type="password" id="inputPassword" class="form-control" placeholder="Password" name="newpassword"
+                                        required>
+                             </div>
+                            <div>
+                                <input type="password" id="inputPassword" class="form-control" placeholder="Repeat Password" name="password1"
+                                       required>
+
+                             </div>
+
+
                             <button class="btn btn-lg btn-primary btn-block" type="submit">S'inscrire</button>
                         </form>
                     </div>

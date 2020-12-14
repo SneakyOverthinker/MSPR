@@ -23,6 +23,6 @@ $stmt->bindValue(':date_de_naissance', $data['date_de_naissance']);
 $stmt->execute();
 
 $id = $dbh->lastInsertId();
-header('Location: ../');
+header('Location: ../index.php');
 
-header("Location: ../users.php?id=$id");
+header("Location: ../user.php?id=$id");
