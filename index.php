@@ -65,6 +65,22 @@
                          aria-labelledby="v-pills-signup-tab">
                         <form class="form-signup" action="assets/user/add-user.php" >
                             <h1 class="h3 mb-3 font-weight-normal">Créer un profil</h1>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Nom</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Prénom</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Date de naissance</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            </div>
                             <label for="inputEmail" class="sr-only">Connexion</label>
                             <input type="text" id="inputEmail" class="form-control" placeholder="login" name="newlogin"
                                    required
