@@ -19,16 +19,16 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="../user.php">Profil</a>
+                    <a class="nav-link" href="user.php?id=<?php echo $_GET['$id']; ?>">Profil</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Fil d'actualité</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Favoris</a>
+                    <a class="nav-link" href="logout.php">Favoris</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Déconnexion</a>
+                    <a class="nav-link" href="../logout.php">Déconnexion</a>
                 </li>
             </ul>
         </div>
