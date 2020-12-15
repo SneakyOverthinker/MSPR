@@ -1,5 +1,5 @@
-<?php require_once 'includes/header.php'; ?>
-<?php require_once 'includes/helpers.php'; ?>
+<?php include_once 'includes/header.php'; ?>
+<?php include_once 'includes/helpers.php'; ?>
 
     <section class="jumbotron jumbotron-fluid"> <!-- Jumbotron -->
         <div class="container">

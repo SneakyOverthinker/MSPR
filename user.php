@@ -1,11 +1,34 @@
-<?php require_once 'includes/header.php'; ?>
+<?php require_once 'includes/header.php';
 
-<?php $user = getUser($_GET['id']); ?>
+session_start();
+if(!isset($_SESSION['users'])){
+
+// Initialisation de la session.
+// Si vous utilisez un autre nom
+// session_name("autrenom")
+session_start();
+
+// Détruit toutes les variables de session
+
+
+
+?>
+
+<?php function getUser($login)
+{
+    $dbh = connectDB();
+    $stmt = $dbh->prepare("SELECT * FROM users where login = :login");
+    $stmt->bindValue(':login', $login);
+    $stmt ->execute();
+    return $stmt->fetch(PDO::FETCH_ASSOC);
+}
+
+$user = getUser(['login']); ?>
 
     <div class="container">
         <h1>Modifier votre profil <?php echo $user['id']; ?> </h1>
 
-        <form action=".php?id=<?php echo $user['id']; ?>" method="post">
+        <form action="user.php?id=<?php echo $user['id']; ?>" method="post">
 
             <div class="form-group">
                 <label for="name">Nom</label>
