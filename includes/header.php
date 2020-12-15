@@ -1,3 +1,5 @@
+<?php require_once 'includes/helpers.php'; ?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -5,36 +7,28 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-
-    <!-- JS, Popper.js, and jQuery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <title>Outfits of the day</title>
+    <link rel="stylesheet" href="assets/css/app.css">
 </head>
 <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="/webix/index.php">O.F.D.</a>
+        <a class="navbar-brand" href="../index.php">O.F.D.</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="/webix/client/client.php">Profil<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="../user.php">Profil</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/webix/index.php">Photo</a>
+                    <a class="nav-link" href="#">Fil d'actualité</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/webix/logout.php">Fil d'actualité</a>
+                    <a class="nav-link" href="#">Favoris</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/webix/login.php">LogIn</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/webix/login.php">Favoris</a>
+                    <a class="nav-link" href="#">Déconnexion</a>
                 </li>
             </ul>
         </div>

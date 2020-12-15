@@ -1,8 +1,4 @@
 {
-  "name": "MSPR",
-  "version": "1.0.0",
-  "description": "mspr",
-  "main": "index.js",
   "scripts": {
     "dev": "npm run development",
     "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
@@ -11,17 +7,6 @@
     "prod": "npm run production",
     "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/SneakyOverthinker/MSPR.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/SneakyOverthinker/MSPR/issues"
-  },
-  "homepage": "https://github.com/SneakyOverthinker/MSPR#readme",
   "devDependencies": {
     "cross-env": "^7.0.3",
     "laravel-mix": "^5.0.9",
@@ -31,6 +16,7 @@
     "vue-template-compiler": "^2.6.12"
   },
   "dependencies": {
+    "@popperjs/core": "^2.6.0",
     "bootstrap": "^5.0.0-beta1"
   }
 }

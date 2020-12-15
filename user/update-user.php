@@ -1,4 +1,4 @@
-<?php include('/MSPR/includes/helpers.php'); ?>
+<?php include('includes/helpers.php'); ?>
 
 <?php
 $id = $_GET['id'];
