@@ -1,4 +1,5 @@
 <?php require_once 'includes/header.php'; ?>
+<?php require_once 'includes/helpers.php'; ?>
 
     <section class="jumbotron jumbotron-fluid"> <!-- Jumbotron -->
         <div class="container">
@@ -21,7 +22,7 @@
                 </div>
                 <div class="tab-content col-lg-9" id="v-pills-tabContent">
                     <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-                        <form class="form-signin" action="session.php" method="POST">
+                        <form class="form-signin" action="login-action.php" method="POST">
                             <h1 class="h3 mb-3 font-weight-normal">Se connecter</h1>
                             <div class="mb-3">
                             <label class="sr-only">Pseudo</label>
