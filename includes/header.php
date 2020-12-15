@@ -22,13 +22,13 @@
                     <a class="nav-link" href="user.php?id=<?php echo $_GET['$id']; ?>">Profil</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Fil d'actualité</a>
+                    <a class="nav-link" href="../actualite.php">Fil d'actualité</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="logout.php">Favoris</a>
+                    <a class="nav-link" href="#">Favoris</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../logout.php">Déconnexion</a>
+                    <a class="nav-link" href="../logout-action.php">Déconnexion</a>
                 </li>
             </ul>
         </div>
