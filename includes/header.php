@@ -22,7 +22,7 @@
                     <a class="nav-link" href="user.php?id=<?php echo $_GET['$id']; ?>">Profil</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../actualite.php">Fil d'actualité</a>
+                    <a class="nav-link" href="../post.php">Fil d'actualité</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Favoris</a>
