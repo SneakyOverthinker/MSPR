@@ -3,16 +3,6 @@
 include_once 'includes/header.php';
 //récu données via $_POST
 
-
-function getUser($login)
-{
-    $dbh = connectDB();
-    $stmt = $dbh->prepare("SELECT * FROM users where login = :login");
-    $stmt->bindValue(':login', $login);
-    $stmt ->execute();
-    return $stmt->fetch(PDO::FETCH_ASSOC);
-}
-
 $user = getUser($_POST['login']);
 
 $_SESSION['user'] = $user['login'];

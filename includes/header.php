@@ -1,22 +1,14 @@
-<?php require_once 'includes/helpers.php'; ?>
+<?php require_once 'includes/helpers.php';
 
-
-<?php  session_start();
-
+session_start();
 
 if(!isset($_SESSION['user']) && $_SERVER['REQUEST_URI']!= '/MSPR/index.php'){
-
   header ("location:index.php");
-}
-if (!is_writable(session_save_path())) {
-    echo 'Session path "'.session_save_path().'" is not writable for PHP!';
 }
 
 ?>
-
-
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"

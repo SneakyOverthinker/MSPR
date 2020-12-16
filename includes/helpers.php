@@ -11,8 +11,20 @@ function connectDB()
 // We get the users from the DBH
 
 
-function getUsers(){
+function getUsers()
+{
     $dbh = connectDB();
     // On prépare la requête SQL
     $stmt = $dbh->query("SELECT * FROM users");
-    return $stmt->fetchAll(PDO::FETCH_ASSOC);}
+    return $stmt->fetchAll(PDO::FETCH_ASSOC);
+}
+
+
+function getUser($login)
+{
+    $dbh = connectDB();
+    $stmt = $dbh->prepare("SELECT * FROM users where login = :login");
+    $stmt->bindValue(':login', $login);
+    $stmt->execute();
+    return $stmt->fetch(PDO::FETCH_ASSOC);
+}
