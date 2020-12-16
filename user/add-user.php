@@ -1,7 +1,6 @@
 <?php
 include_once '../includes/helpers.php';
 
-var_dump($_POST);
 
 $data = [
     'first_name' => $_POST['first_name'],
@@ -25,6 +24,20 @@ try {
     $stmt->execute();
 
     $id = $dbh->lastInsertId();
+
+
+$_SESSION['user'] = $user;
+
+
+//comparaison login et mdp
+if ($user['login'] == $_POST['login'] && $user['password'] == $_POST['password']) {
+
+    header("Location: user.php");
+} else {
+    echo 'try again';
+}
+
+
 
     header("Location: ../user.php?id=$id");
 

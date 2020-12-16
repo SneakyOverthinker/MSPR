@@ -9,9 +9,8 @@
     return $stmt->fetch(PDO::FETCH_ASSOC);
 }
 
-$username = $_SESSION['user']['login'];
+$username = $_SESSION['user'];
 $user = getUser($username);
-
 
 ?>
 

@@ -10,7 +10,7 @@ function getUser($login)
     return $stmt->fetch(PDO::FETCH_ASSOC);
 }
 
-$username = $_SESSION['user']['login'];
+$username = $_SESSION['user'];
 $user = getUser($username);
 
 ?>
@@ -18,7 +18,7 @@ $user = getUser($username);
 <div class="container">
     <h1> Modifier votre profil<?php echo $user['id']; ?> </h1>
 
-    <form action="/user/update-user.php?id=<?php echo $user['id']; ?>" method="post">
+    <form action="user/update-user.php?id=<?php echo $user['id']; ?>" method="post">
 
         <div class="form-group">
             <label for="name">Nom</label>

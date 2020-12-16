@@ -15,7 +15,7 @@ function getUser($login)
 
 $user = getUser($_POST['login']);
 
-$_SESSION['user'] = $user;
+$_SESSION['user'] = $user['login'];
 
 
 /*function getUser($id)
