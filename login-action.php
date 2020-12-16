@@ -1,6 +1,6 @@
 <?php
 
-include_once 'includes/helpers.php';
+include_once 'includes/header.php';
 //récu données via $_POST
 
 
@@ -15,6 +15,9 @@ function getUser($login)
 
 $user = getUser($_POST['login']);
 
+$_SESSION['user'] = $user;
+
+
 /*function getUser($id)
 {
     $dbh = connectDB();
@@ -28,10 +31,6 @@ $user = getUser($_POST['login']);
 
 //comparaison login et mdp
 if ($user['login'] == $_POST['login'] && $user['password'] == $_POST['password']) {
-    session_start();
-    $_SESSION['user'] = $user;
-
-
 
     header("Location: user.php");
 } else {
