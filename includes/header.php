@@ -2,9 +2,9 @@
 
 session_start();
 
-if(!isset($_SESSION['user']) && $_SERVER['REQUEST_URI']!= '/MSPR/index.php'){
+/**if(!isset($_SESSION['user']) && $_SERVER['REQUEST_URI']!= '/MSPR/index.php'){
   header ("location:index.php");
-}
+}*/
 
 ?>
 <!doctype html>

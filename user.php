@@ -1,7 +1,7 @@
 <?php require_once 'includes/header.php';
 
-$login = $_SESSION['user'];
-$user = getUser($login);
+$id = $_SESSION['user_id'];
+$user = getUser($id);
 ?>
 
     <section>

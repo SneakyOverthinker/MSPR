@@ -5,7 +5,7 @@ include_once 'includes/header.php';
 
 $user = getUser($_POST['login']);
 
-$_SESSION['user'] = $user['login'];
+$_SESSION['user_id'] = $user['id'];
 
 
 /*function getUser($id)
@@ -24,7 +24,7 @@ if ($user['login'] == $_POST['login'] && $user['password'] == $_POST['password']
 
     header("Location: user.php");
 } else {
-    echo 'tryy again';
+    echo 'try again';
 }
 
 ?>

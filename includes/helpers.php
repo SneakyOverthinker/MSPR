@@ -3,7 +3,7 @@
 // Connexion à la base de donnée dbh
 function connectDB()
 {
-    return new PDO('mysql:host=localhost;dbname=MSPR-php', 'root', 'root',
+    return new PDO('mysql:host=localhost;dbname=MSPR-php', 'root', '',
         [PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8']
     );
 }
@@ -20,11 +20,11 @@ function getUsers()
 }
 
 
-function getUser($login)
+function getUser($id)
 {
     $dbh = connectDB();
-    $stmt = $dbh->prepare("SELECT * FROM users where login = :login");
-    $stmt->bindValue(':login', $login);
+    $stmt = $dbh->prepare("SELECT * FROM users where id = :id");
+    $stmt->bindValue(':id', $id);
     $stmt->execute();
     return $stmt->fetch(PDO::FETCH_ASSOC);
 }

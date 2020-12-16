@@ -1,13 +1,13 @@
 <?php include_once 'includes/header.php';
 
-$login = $_SESSION['user'];
-$user = getUser($login);
+$id = $_SESSION['user_id'];
+$user = getUser($id);
 
 ?>
 
 <section>
     <div class="container">
-        <h1> Modifier votre profil<?php echo $user['id']; ?> </h1>
+        <h1>Modifier votre profil<?php echo $user['id']; ?> </h1>
 
         <form action="user/update-user.php?id=<?php echo $user['id']; ?>" method="post">
             <div class="mb-3">
@@ -29,6 +29,11 @@ $user = getUser($login);
                 <label for="name">E-mail</label>
                 <input type="email" class="form-control" placeholder="exemple@email.com" id="email" name="email"
                        value="<?php echo $user['email']; ?>" required>
+            </div>
+            <div class="mb-3">
+                <label for="name">Pseudo (ne pas modifier)</label>
+                <input type="text" id="login" class="form-control" placeholder="login" name="login"
+                       value="<?php echo $user['login']; ?>" required>
             </div>
             <div class="mb-3">
                 <label for="name">Mot de passe</label>

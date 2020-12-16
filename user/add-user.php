@@ -26,17 +26,17 @@ try {
     $id = $dbh->lastInsertId();
 
 
-$_SESSION['user'] = $user;
+    session_start();
+    $_SESSION['user_id'] = $id;
 
 
 //comparaison login et mdp
-if ($user['login'] == $_POST['login'] && $user['password'] == $_POST['password']) {
+    if ($user['login'] == $_POST['login'] && $user['password'] == $_POST['password']) {
 
-    header("Location: user.php");
-} else {
-    echo 'try again';
-}
-
+        header("Location: user.php");
+    } else {
+        echo 'try again';
+    }
 
 
     header("Location: ../user.php?id=$id");
