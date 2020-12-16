@@ -31,11 +31,6 @@ $user = getUser($login);
                        value="<?php echo $user['email']; ?>" required>
             </div>
             <div class="mb-3">
-                <label for="name">Pseudo</label>
-                <input type="text" id="login" class="form-control" placeholder="Login" name="login"
-                       value="<?php echo $user['login']; ?>" required>
-            </div>
-            <div class="mb-3">
                 <label for="name">Mot de passe</label>
                 <input type="password" id="Password" class="form-control" placeholder="Password" name="password"
                        value="<?php echo $user['password']; ?>" required>
