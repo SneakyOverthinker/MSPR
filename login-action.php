@@ -34,7 +34,7 @@ if ($user['login'] == $_POST['login'] && $user['password'] == $_POST['password']
 
     header("Location: user.php");
 } else {
-    echo 'try again';
+    echo 'tryy again';
 }
 
 ?>
