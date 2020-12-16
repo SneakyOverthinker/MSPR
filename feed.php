@@ -9,10 +9,10 @@
             <div class="col-4">
                 <div class="card" style="width: 18rem;">
                 <img src="..." class="card-img-top" alt="...">
-                <input class="form-control" name="post" id="post" placeholder="Publication" required>
+                <input class="form-control" type="text" name="post" id="post" placeholder="Publication" required>
             </div>
             <div class="col mb-3">
-                <button class="btn btn-info" id="my-button">Publier</button>
+                <button class="btn btn-info" id="my-button">Publier l</button>
             </div>
         </div>
             <p id="text" class="mt-3"></p>
