@@ -36,7 +36,7 @@ $user = getUser($username);
                    value="<?php echo $user['birthday']; ?>" required>
         </div>
         <div class="form-group">
-            <label for="name">Email</label>
+            <label for="name">E-mail</label>
             <input type="email" class="form-control" placeholder="exemple@email.com" id="email" name="email"
                    value="<?php echo $user['email']; ?>" required>
         </div>
