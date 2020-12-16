@@ -16,7 +16,7 @@ $user = getUser($username);
 ?>
 
     <div class="container">
-    <h1>Modifier votre profile <?php echo $user['id']; ?> </h1>
+    <h1>Modifier profile <?php echo $user['id']; ?> </h1>
 
 
     <div class="card-body">
