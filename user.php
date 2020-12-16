@@ -10,8 +10,8 @@
 }
 
 $username = $_SESSION['user']['login'];
-$user = getUsers($username);
-$user = $user[0];
+$user = getUser($username);
+
 
 ?>
 

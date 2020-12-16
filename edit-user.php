@@ -1,6 +1,19 @@
 <?php include_once 'includes/header.php'; ?>
 
-<?php $user = getUser($_POST['id']); ?>
+<?php
+function getUser($login)
+{
+    $dbh = connectDB();
+    $stmt = $dbh->prepare("SELECT * FROM users where login = :login");
+    $stmt->bindValue(':login', $login);
+    $stmt->execute();
+    return $stmt->fetch(PDO::FETCH_ASSOC);
+}
+
+$username = $_SESSION['user']['login'];
+$user = getUser($username);
+
+?>
 
 <div class="container">
     <h1> Modifier votre profil<?php echo $user['id']; ?> </h1>
