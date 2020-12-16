@@ -6,7 +6,7 @@ $user = getUser($login);
 
     <section>
         <div class="container">
-            <h1 class="h1">Modifier profil <?php echo $user['id']; ?> </h1>
+            <h1 class="h1">Modifier le profil <?php echo $user['id']; ?> </h1>
 
             <div class="card mb-4">
                 <div class="card-body">
